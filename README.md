@@ -1,3 +1,2 @@
 # SimpleCokeCooler
-A coke cooler for cool people
-There is a class in it.
+A coke cooler for cool people. Only Class for now.
