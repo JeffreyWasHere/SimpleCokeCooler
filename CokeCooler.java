@@ -2,10 +2,10 @@ public class CokeCooler {
     private int numCoke;
     
     //constructer
-    public CokeCooler(){
-        numCoke = 1;
+    public CokeCooler(int nc){
+        numCoke = nc;
     }
-        
+
     //drink method
     public void drinkCoke(){
         numCoke -= 1;
