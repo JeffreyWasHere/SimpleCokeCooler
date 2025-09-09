@@ -1,22 +1,33 @@
 public class CokeCooler {
-    private int numCoke;
+    private double numCoke;
+    private double drinkTime;
+    private double totalDrink;
     
-    //constructer
-    public CokeCooler(int nc){
-        numCoke = nc;
+    // constructor
+    public CokeCooler(double numCoke){
+        this.numCoke = numCoke;
+        this.drinkTime = 0.0;
+        this.totalDrink = 0.0;
     }
 
-    //drink method
-    public void drinkCoke(){
-        numCoke -= 1;
+    // decrease method
+    public void drinkCoke(double amount){
+        numCoke -= amount;
+        drinkTime ++;
+        totalDrink += amount;
     }
     
-    //refill method
-    public void refillCoke(){
-        numCoke += 1;
+    // increase method
+    public void refillCoke(double amount){
+        numCoke += amount;
     }
-    //getter
-    public int getCount(){
+    // getter
+    public double getCurrentCoke(){
         return numCoke;
+    }
+
+    // get avarage
+    public double getAverageCokeDrunk(){
+        return totalDrink / drinkTime;
     }
 }
